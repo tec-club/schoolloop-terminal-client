@@ -41,15 +41,19 @@ public class Console
         
         System.out.println("Session ID: " + sl.getSessionId());
         
-        if (args.getInput().equals("grades")) {
-            System.out.println();
-            System.out.format("%4s%24s%12s%12s", "P", "Class", "%", "Grade");
-            System.out.println("\n----------------------------------------------------");
-            List<GradeBookEntry> grades = sl.getGrades();
-            for (GradeBookEntry g : grades) {
-                System.out.format("%4s%24s%12s%12s", g.period, g.className, g.percent, g.grade);
+        if (args.getInput() != null) {
+        
+            if (args.getInput().equals("grades")) {
                 System.out.println();
+                System.out.format("%4s%24s%12s%12s", "P", "Class", "%", "Grade");
+                System.out.println("\n----------------------------------------------------");
+                List<GradeBookEntry> grades = sl.getGrades();
+                for (GradeBookEntry g : grades) {
+                    System.out.format("%4s%24s%12s%12s", g.period, g.className, g.percent, g.grade);
+                    System.out.println();
+                }
             }
+            
         }
         
         return "";
