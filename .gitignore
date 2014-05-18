@@ -17,6 +17,12 @@
 # Mac
 .DS_Store
 
+# Linux
+*~
+
 # Maven
 log/
 target/
+
+# Dev Preference
+src/main/java/com/alexwendland/schoolloop/Driver.java
