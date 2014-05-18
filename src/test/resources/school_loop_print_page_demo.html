@@ -1,0 +1,891 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title></title>
+<link rel="stylesheet" type="text/css" href="/css/version_1404111309/print.css"/>
+<script type="text/javascript" src="https://cdn.schoolloop.com/1404111309/static/lib/jquery/1.8/js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="https://cdn.schoolloop.com/1404111309/static/lib/jquery/1.8/jquery-ui-1.9.2/ui/minified/jquery-ui.min.js"></script>
+
+<link href="https://cdn.schoolloop.com/1404111309/static/lib/wijmo/Wijmo.2.3.8/Wijmo-Complete/css/jquery.wijmo-complete.all.2.3.8.min.css" rel="stylesheet" type="text/css"/>
+
+<script type="text/javascript" src="https://cdn.schoolloop.com/1404111309/static/lib/wijmo/Wijmo.2.3.8/Wijmo-Open/js/jquery.wijmo-open.all.2.3.8.min.js"></script>
+<script src="https://cdn.schoolloop.com/1404111309/static/lib/wijmo/Wijmo.2.3.8/Wijmo-Complete/js/jquery.wijmo-complete.all.2.3.8.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="/javascript/version_1404111309/master.js"></script>
+<script type="text/javascript" src="/javascript/version_1404111309/master1_8.js"></script>
+<script type="text/javascript" src="https://cdn.schoolloop.com/1404111309/static/lib/jquery/extra/js/jquery.form.js"></script>
+<script type="text/javascript" src="https://cdn.schoolloop.com/1404111309/static/lib/jquery_old/jScrollPane.js"></script>
+<script type="text/javascript" src="https://cdn.schoolloop.com/1404111309/static/lib/reponsiveslides_sl/responsive_player.js"></script>
+<link rel="stylesheet" type="text/css" media="all" href="https://cdn.schoolloop.com/1404111309/static/lib/jquery_old/jScrollPane.css"/>
+<style type="text/css" media="all">@import "https://cdn.schoolloop.com/1404111309/static/static_css/global.css";</style>
+<link href="https://cdn.schoolloop.com/1404111309/static/lib/colorbox/colorbox.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="https://cdn.schoolloop.com/1404111309/static/lib/colorbox/jquery.colorbox-min.js"></script>
+<script type="text/javascript">
+    var checkDocument = false;
+
+    function checkContentEditable() {
+        if (checkDocument == false) {
+            checkDocument = true;
+            //console.log("editable = " + document.body.contentEditable + " " + window.location.hostname);
+            if (document.body.contentEditable == 'true') {
+                //console.log("redirect");
+                window.location.reload();
+            }
+            checkDocument = false;
+        }
+
+    }
+
+
+    function startCheckContentEditable(interval) {
+        //console.log("starting");
+        setInterval("checkContentEditable()", interval);
+        jQuery(window).keydown(function() {
+            if (document.body.contentEditable == 'true') {
+                //console.log("redirect");
+                window.location.reload();
+            }
+        });
+    }
+
+    jQuery(document).ready(function() {
+        startCheckContentEditable(1000);
+
+    });
+</script>
+
+</head>
+<body>
+<div style="padding: 10px 10px 0px 10px;">
+<div class="page_title">
+John Smith
+</div>
+<div style="max-width: 625px">
+<h2 class="header_rule">
+Academics
+</h2>
+<div class="dashboard">
+<div class=" item_highlight ajax_accordion">
+<div class="accordion_block">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="row">
+<tr>
+<td class="period">
+0
+</td>
+<td class="course">
+Hnr Comp Lit 3B
+</td>
+<td class="grade">A</td>
+<td class="percent">
+95.25%
+</td>
+<td class="zeros">
+<span>Zeros: </span>0
+</td>
+</tr>
+</table>
+</div>
+<div class="ajax_accordion_content"></div>
+
+
+
+</div><div class="item_plain ajax_accordion">
+<div class="accordion_block">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="row">
+<tr>
+<td class="period">
+1
+</td>
+<td class="course">
+Hnr Spanish 3B
+</td>
+<td class="grade">A-</td>
+<td class="percent">
+92%
+</td>
+<td class="zeros">
+<span>Zeros: </span>0
+</td>
+</tr>
+</table>
+</div>
+<div class="ajax_accordion_content"></div>
+
+
+
+</div><div class=" item_highlight ajax_accordion">
+<div class="accordion_block">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="row">
+<tr>
+<td class="period">
+2
+</td>
+<td class="course">
+AP Chemistry 1B
+</td>
+<td class="grade">A-</td>
+<td class="percent">
+91.3%
+</td>
+<td class="zeros">
+<span>Zeros: </span>0
+</td>
+</tr>
+</table>
+</div>
+<div class="ajax_accordion_content"></div>
+
+
+
+</div><div class="item_plain ajax_accordion">
+<div class="accordion_block">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="row">
+<tr>
+<td class="period">
+3
+</td>
+<td class="course">
+APUSH 2013-2014B
+</td>
+<td class="grade">A-</td>
+<td class="percent">
+92.49%
+</td>
+<td class="zeros">
+<span>Zeros: </span>1
+</td>
+</tr>
+</table>
+</div>
+<div class="ajax_accordion_content"></div>
+
+
+
+</div><div class=" item_highlight ajax_accordion">
+<div class="accordion_block">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="row">
+<tr>
+<td class="period">
+4
+</td>
+<td class="course">
+AP Cal BC 1B
+</td>
+<td class="grade">A+</td>
+<td class="percent">
+98.74%
+</td>
+<td class="zeros">
+<span>Zeros: </span>2
+</td>
+</tr>
+</table>
+</div>
+<div class="ajax_accordion_content"></div>
+
+
+
+</div><div class="item_plain ajax_accordion">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="row">
+<tr>
+<td class="period">
+5
+</td>
+<td class="course">
+Home 5
+</td>
+<td class="column" width="290">
+<div class="label_light">
+No Grades Published
+</div>
+</td>
+</tr>
+</table>
+<div class="ajax_accordion_content"></div>
+
+
+
+</div><div class=" item_highlight ajax_accordion">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="row">
+<tr>
+<td class="period">
+6
+</td>
+<td class="course">
+(B) Tennis
+</td>
+<td class="column" width="290">
+<div class="label_light">
+No Grades Published
+</div>
+</td>
+</tr>
+</table>
+<div class="ajax_accordion_content"></div>
+
+
+
+</div><div class="item_plain ajax_accordion">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="row">
+<tr>
+<td class="period">
+7
+</td>
+<td class="course">
+Youth & Govt 1A
+</td>
+<td class="column" width="290">
+<div class="label_light">
+No Grades Published
+</div>
+</td>
+</tr>
+</table>
+<div class="ajax_accordion_content"></div>
+
+
+
+</div>
+<div class="clear"></div>
+</div>
+<script type="text/javascript">
+
+
+ jQuery(document).on("click","a.ajax_progressDetail", function(e) {
+            e.preventDefault();
+         var thisClicker =   jQuery(this);
+         var thisContainer = thisClicker.closest(".ajax_prog_item").find(".prog_Detail_holder");
+         var thisContainerDown = (thisContainer.is(":visible"));
+
+
+
+     if (thisContainerDown) {
+            thisContainer.slideUp();
+            thisClicker.removeClass("current");
+     }
+     else
+     {
+         if (thisContainer.is(':not(:empty)')){
+            thisContainer.fadeIn().slideDown();
+            thisClicker.addClass("current");
+
+         }
+         else
+         {
+             jQuery.ajax({
+              url: thisClicker.attr("href"),
+              success: function(returnedHTML) {
+                thisContainer.html(returnedHTML);
+                thisContainer.fadeIn().slideDown();
+                thisClicker.addClass("current");
+                 }
+              });
+         }
+     }
+ }
+ )
+ </script>
+<div class="content_spacing"></div>
+<h2 class="header_rule" style="margin: 0px 0px 0px 0px;">
+Calendar
+</h2>
+<div class="">
+<div class="padding_3 ">
+<div class="cal_label_day float_l">
+Sunday
+</div>
+<div class="cal_label_date float_r">
+5/11/14
+</div>
+<div class="clear"></div>
+</div>
+
+
+</div>
+<div class="">
+<div class="padding_3">
+<div class="cal_label_day_has float_l">
+Monday
+</div>
+<div class="cal_label_date_has float_r">
+5/12/14
+</div>
+<div class="clear"></div>
+</div>
+<div class="ajax_accordion due_page" data-track-container="Assignment Due">
+<div class="accordion_block">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="cal_item_table">
+<tr>
+<td class="column width_l item_title">
+<div class='cal_text_course'><b>Hnr Spanish 3B</b></div>
+</div>
+<td class="column item_title">
+<a data-track-link="Assignment Title" href="/assignment/view?d=x&id=1397284424281&return_url=1400381468591">15 defininitions 313A.</a>
+</td>
+<td class="column width_r">
+Assignment
+</td>
+</tr>
+</table>
+</div>
+<div class="ajax_accordion_content"></div>
+</div>
+
+<div class="ajax_accordion due_page" data-track-container="Assignment Due">
+<div class="accordion_block">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="cal_item_table">
+<tr>
+<td class="column width_l item_title">
+<div class='cal_text_course'><b>Hnr Comp Lit 3B</b></div>
+</div>
+<td class="column item_title">
+<a data-track-link="Assignment Title" href="/assignment/view?d=x&id=1397285244448&return_url=1400381468591">Discuss chs 11-13; Return RD to Tien's group; Return Ext Outlines to everyone else; read 14-15</a>
+</td>
+<td class="column width_r">
+Assignment
+</td>
+</tr>
+</table>
+</div>
+<div class="ajax_accordion_content"></div>
+</div>
+
+
+<div class="cal_label_events">
+Events
+</div>
+
+<div class="ajax_accordion school_page
+">
+<div class="accordion_block">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="cal_item_table">
+<tr>
+<td class="column width_l">
+All Day:
+</td>
+<td class="column item_title">
+<a href="/calendar/view?d=x&id=1385191285624&return_url=1400381468591">AP Exams</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="ajax_accordion_content"></div>
+</div>
+
+</div>
+<div class="">
+<div class="padding_3">
+<div class="cal_label_day_has float_l">
+Tuesday
+</div>
+<div class="cal_label_date_has float_r">
+5/13/14
+</div>
+<div class="clear"></div>
+</div>
+<div class="ajax_accordion due_page" data-track-container="Assignment Due">
+<div class="accordion_block">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="cal_item_table">
+<tr>
+<td class="column width_l item_title">
+<div class='cal_text_course'><b>Hnr Spanish 3B</b></div>
+</div>
+<td class="column item_title">
+<a data-track-link="Assignment Title" href="/assignment/view?d=x&id=1397285025060&return_url=1400381468591">313A voc. QUIZ</a>
+</td>
+<td class="column width_r">
+Quiz
+</td>
+</tr>
+</table>
+</div>
+<div class="ajax_accordion_content"></div>
+</div>
+
+<div class="ajax_accordion due_page" data-track-container="Assignment Due">
+<div class="accordion_block">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="cal_item_table">
+<tr>
+<td class="column width_l item_title">
+<div class='cal_text_course'><b>Hnr Comp Lit 3B</b></div>
+</div>
+<td class="column item_title">
+<a data-track-link="Assignment Title" href="/assignment/view?d=x&id=1399702213556&return_url=1400381468591">Discuss 14-15; read16-17</a>
+</td>
+<td class="column width_r">
+Assignment
+</td>
+</tr>
+</table>
+</div>
+<div class="ajax_accordion_content"></div>
+</div>
+
+<div class="ajax_accordion due_page" data-track-container="Assignment Due">
+<div class="accordion_block">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="cal_item_table">
+<tr>
+<td class="column width_l item_title">
+<div class='cal_text_course'><b>Hnr Spanish 3B</b></div>
+</div>
+<td class="column item_title">
+<a data-track-link="Assignment Title" href="/assignment/view?d=x&id=1397285025008&return_url=1400381468591">Study voc. 313A. Crucigrama 313A. Write out voc. 313B.</a>
+</td>
+<td class="column width_r">
+Assignment
+</td>
+</tr>
+</table>
+</div>
+<div class="ajax_accordion_content"></div>
+</div>
+
+
+<div class="cal_label_events">
+Events
+</div>
+
+<div class="ajax_accordion school_page
+">
+<div class="accordion_block">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="cal_item_table">
+<tr>
+<td class="column width_l">
+All Day:
+</td>
+<td class="column item_title">
+<a href="/calendar/view?d=x&id=1385191287554&return_url=1400381468591">AP Exams</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="ajax_accordion_content"></div>
+</div>
+
+<div class="ajax_accordion school_page
+group_page
+">
+<div class="accordion_block">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="cal_item_table">
+<tr>
+<td class="column width_l">
+12:00 PM
+</td>
+<td class="column item_title">
+<a href="/calendar/view?d=x&id=1397284505143&return_url=1400381468591">Most Inspirational Student of the Month lunch!</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="ajax_accordion_content"></div>
+</div>
+
+<div class="ajax_accordion school_page
+">
+<div class="accordion_block">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="cal_item_table">
+<tr>
+<td class="column width_l">
+6:00 PM
+</td>
+<td class="column item_title">
+<a href="/calendar/view?d=x&id=1385192403694&return_url=1400381468591">NMUSD School Board Meeting</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="ajax_accordion_content"></div>
+</div>
+
+</div>
+<div class="">
+<div class="padding_3">
+<div class="cal_label_day_has float_l">
+Wednesday
+</div>
+<div class="cal_label_date_has float_r">
+5/14/14
+</div>
+<div class="clear"></div>
+</div>
+<div class="ajax_accordion due_page" data-track-container="Assignment Due">
+<div class="accordion_block">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="cal_item_table">
+<tr>
+<td class="column width_l item_title">
+<div class='cal_text_course'><b>Hnr Spanish 3B</b></div>
+</div>
+<td class="column item_title">
+<a data-track-link="Assignment Title" href="/assignment/view?d=x&id=1397285025339&return_url=1400381468591">WB 107-110. Skip Actividad 8.</a>
+</td>
+<td class="column width_r">
+Assignment
+</td>
+</tr>
+</table>
+</div>
+<div class="ajax_accordion_content"></div>
+</div>
+
+<div class="ajax_accordion due_page" data-track-container="Assignment Due">
+<div class="accordion_block">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="cal_item_table">
+<tr>
+<td class="column width_l item_title">
+<div class='cal_text_course'><b>Hnr Comp Lit 3B</b></div>
+</div>
+<td class="column item_title">
+<a data-track-link="Assignment Title" href="/assignment/view?d=x&id=1399702213564&return_url=1400381468591">Discuss 16-17; read 18-19</a>
+</td>
+<td class="column width_r">
+Assignment
+</td>
+</tr>
+</table>
+</div>
+<div class="ajax_accordion_content"></div>
+</div>
+
+<div class="ajax_accordion due_page" data-track-container="Assignment Due">
+<div class="accordion_block">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="cal_item_table">
+<tr>
+<td class="column width_l item_title">
+<div class='cal_text_course'><b>AP Cal BC 1B</b></div>
+</div>
+<td class="column item_title">
+<a data-track-link="Assignment Title" href="/assignment/view?d=x&id=1399702397854&return_url=1400381468591">Bring Calculators To Class</a>
+</td>
+<td class="column width_r">
+Assignment
+</td>
+</tr>
+</table>
+</div>
+<div class="ajax_accordion_content"></div>
+</div>
+
+
+<div class="cal_label_events">
+Events
+</div>
+
+<div class="ajax_accordion school_page
+">
+<div class="accordion_block">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="cal_item_table">
+<tr>
+<td class="column width_l">
+All Day:
+</td>
+<td class="column item_title">
+<a href="/calendar/view?d=x&id=1385191285752&return_url=1400381468591">AP Exams</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="ajax_accordion_content"></div>
+</div>
+
+<div class="ajax_accordion school_page
+">
+<div class="accordion_block">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="cal_item_table">
+<tr>
+<td class="column width_l">
+All Day:
+</td>
+<td class="column item_title">
+<a href="/calendar/view?d=x&id=1396074511791&return_url=1400381468591">California Day of the Teacher</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="ajax_accordion_content"></div>
+</div>
+
+<div class="ajax_accordion
+group_page
+">
+<div class="accordion_block">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="cal_item_table">
+<tr>
+<td class="column width_l">
+6:40 AM
+</td>
+<td class="column item_title">
+<a href="/calendar/view?d=x&id=1391248571517&return_url=1400381468591">AP Breakfast & Exam</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="ajax_accordion_content"></div>
+</div>
+
+<div class="ajax_accordion school_page
+group_page
+">
+<div class="accordion_block">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="cal_item_table">
+<tr>
+<td class="column width_l">
+12:00 PM
+</td>
+<td class="column item_title">
+<a href="/calendar/view?d=x&id=1397285262513&return_url=1400381468591">Renaissance Card Distribution!</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="ajax_accordion_content"></div>
+</div>
+
+</div>
+<div class="">
+<div class="padding_3">
+<div class="cal_label_day_has float_l">
+Thursday
+</div>
+<div class="cal_label_date_has float_r">
+5/15/14
+</div>
+<div class="clear"></div>
+</div>
+<div class="ajax_accordion due_page" data-track-container="Assignment Due">
+<div class="accordion_block">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="cal_item_table">
+<tr>
+<td class="column width_l item_title">
+<div class='cal_text_course'><b>APUSH 2013-2014B</b></div>
+</div>
+<td class="column item_title">
+<a data-track-link="Assignment Title" href="/assignment/view?d=x&id=1399702656178&return_url=1400381468591">Pilot Test</a>
+</td>
+<td class="column width_r">
+Assignment
+</td>
+</tr>
+</table>
+</div>
+<div class="ajax_accordion_content"></div>
+</div>
+
+<div class="ajax_accordion due_page" data-track-container="Assignment Due">
+<div class="accordion_block">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="cal_item_table">
+<tr>
+<td class="column width_l item_title">
+<div class='cal_text_course'><b>Hnr Spanish 3B</b></div>
+</div>
+<td class="column item_title">
+<a data-track-link="Assignment Title" href="/assignment/view?d=x&id=1397285025403&return_url=1400381468591">Yellow packet</a>
+</td>
+<td class="column width_r">
+Assignment
+</td>
+</tr>
+</table>
+</div>
+<div class="ajax_accordion_content"></div>
+</div>
+
+<div class="ajax_accordion due_page" data-track-container="Assignment Due">
+<div class="accordion_block">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="cal_item_table">
+<tr>
+<td class="column width_l item_title">
+<div class='cal_text_course'><b>Hnr Comp Lit 3B</b></div>
+</div>
+<td class="column item_title">
+<a data-track-link="Assignment Title" href="/assignment/view?d=x&id=1397283770777&return_url=1400381468591">Discuss 18-19; Final Draft due for Tien's group; EE movie</a>
+</td>
+<td class="column width_r">
+Assignment
+</td>
+</tr>
+</table>
+</div>
+<div class="ajax_accordion_content"></div>
+</div>
+
+<div class="ajax_accordion due_page" data-track-container="Assignment Due">
+<div class="accordion_block">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="cal_item_table">
+<tr>
+<td class="column width_l item_title">
+<div class='cal_text_course'><b>AP Cal BC 1B</b></div>
+</div>
+<td class="column item_title">
+<a data-track-link="Assignment Title" href="/assignment/view?d=x&id=1399702544092&return_url=1400381468591">Bring Calculators To Class</a>
+</td>
+<td class="column width_r">
+Assignment
+</td>
+</tr>
+</table>
+</div>
+<div class="ajax_accordion_content"></div>
+</div>
+
+
+<div class="cal_label_events">
+Events
+</div>
+
+<div class="ajax_accordion school_page
+">
+<div class="accordion_block">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="cal_item_table">
+<tr>
+<td class="column width_l">
+All Day:
+</td>
+<td class="column item_title">
+<a href="/calendar/view?d=x&id=1385191288075&return_url=1400381468591">AP Exams</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="ajax_accordion_content"></div>
+</div>
+
+<div class="ajax_accordion school_page
+">
+<div class="accordion_block">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="cal_item_table">
+<tr>
+<td class="column width_l">
+8:20 AM
+</td>
+<td class="column item_title">
+<a href="/calendar/view?d=x&id=1375543803210&return_url=1400381468591">LATE START - 0 Period</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="ajax_accordion_content"></div>
+</div>
+
+<div class="ajax_accordion school_page
+">
+<div class="accordion_block">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="cal_item_table">
+<tr>
+<td class="column width_l">
+9:05 AM
+</td>
+<td class="column item_title">
+<a href="/calendar/view?d=x&id=1390030484505&return_url=1400381468591">LATE START - 1st Period</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="ajax_accordion_content"></div>
+</div>
+
+<div class="ajax_accordion school_page
+group_page
+">
+<div class="accordion_block">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="cal_item_table">
+<tr>
+<td class="column width_l">
+12:00 PM
+</td>
+<td class="column item_title">
+<a href="/calendar/view?d=x&id=1399458992397&return_url=1400381468591">Renaissance Card Distribution!</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="ajax_accordion_content"></div>
+</div>
+
+<div class="ajax_accordion school_page
+">
+<div class="accordion_block">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="cal_item_table">
+<tr>
+<td class="column width_l">
+6:00 PM
+</td>
+<td class="column item_title">
+<a href="/calendar/view?d=x&id=1391248861156&return_url=1400381468591">CdMHS Foundation's Incoming 9th Grade Parent Mixer</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="ajax_accordion_content"></div>
+</div>
+
+</div>
+<div class="">
+<div class="padding_3">
+<div class="cal_label_day_has float_l">
+Friday
+</div>
+<div class="cal_label_date_has float_r">
+5/16/14
+</div>
+<div class="clear"></div>
+</div>
+<div class="ajax_accordion due_page" data-track-container="Assignment Due">
+<div class="accordion_block">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="cal_item_table">
+<tr>
+<td class="column width_l item_title">
+<div class='cal_text_course'><b>Hnr Comp Lit 3B</b></div>
+</div>
+<td class="column item_title">
+<a data-track-link="Assignment Title" href="/assignment/view?d=x&id=1399702213588&return_url=1400381468591">reading period- read 20- 21; Rough Draft due for everyone else BE HERE FOR PEER EDIT</a>
+</td>
+<td class="column width_r">
+Assignment
+</td>
+</tr>
+</table>
+</div>
+<div class="ajax_accordion_content"></div>
+</div>
+
+<div class="ajax_accordion due_page" data-track-container="Assignment Due">
+<div class="accordion_block">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="cal_item_table">
+<tr>
+<td class="column width_l item_title">
+<div class='cal_text_course'><b>Hnr Spanish 3B</b></div>
+</div>
+<td class="column item_title">
+<a data-track-link="Assignment Title" href="/assignment/view?d=x&id=1397285025496&return_url=1400381468591">Study for oral testing</a>
+</td>
+<td class="column width_r">
+Assignment
+</td>
+</tr>
+</table>
+</div>
+<div class="ajax_accordion_content"></div>
+</div>
+
+
+
+</div>
+<div class=" highlight">
+<div class="padding_3 highlight">
+<div class="cal_label_day float_l">
+Saturday
+</div>
+<div class="cal_label_date float_r">
+5/17/14
+</div>
+<div class="clear"></div>
+</div>
+
+
+</div>
+</div>
+<div class="content_spacing"></div>
+</div>
+</body>
+</html>
