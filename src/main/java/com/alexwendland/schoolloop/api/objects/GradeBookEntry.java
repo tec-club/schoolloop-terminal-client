@@ -1,4 +1,4 @@
-package com.alexwendland.schoolloop;
+package com.alexwendland.schoolloop.api.objects;
 
 public class GradeBookEntry {
     public final String className;

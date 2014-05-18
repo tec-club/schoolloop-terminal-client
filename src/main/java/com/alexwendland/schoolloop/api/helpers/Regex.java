@@ -1,4 +1,4 @@
-package com.alexwendland.schoolloop;
+package com.alexwendland.schoolloop.api.helpers;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
