@@ -38,6 +38,7 @@ public class Console
             }
             if (!sl.isValidSession())
                 return "This session is invalid";
+            System.out.println("Loading.....");
         } else {
             String user = args.get("user");
             if (user == null)
@@ -60,11 +61,11 @@ public class Console
         
             if (args.getInput().equals("grades")) {
                 System.out.println();
-                System.out.format("%4s%24s%12s%12s", "P", "Class", "%", "Grade");
-                System.out.println("\n----------------------------------------------------");
+                System.out.format("%4s%30s%12s%10s%10s", "P", "Class", "%", "Grade", "Zeros");
+                System.out.println("\n------------------------------------------------------------------");
                 List<GradeBookEntry> grades = sl.getGrades();
                 for (GradeBookEntry g : grades) {
-                    System.out.format("%4s%24s%12s%12s", g.period, g.className, g.percent, g.grade);
+                    System.out.format("%4s%30s%12s%10s%10s", g.period, g.className, g.percent, g.grade, g.zeros);
                     System.out.println();
                 }
             }
